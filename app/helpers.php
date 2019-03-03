@@ -7,7 +7,7 @@
             return $db_config = [
                 'connection' => 'pgsql',
                 'host' => $url['host'],
-                'database' => substr($url['pash'], 1),
+                'database' => substr($url['path'], 1),
                 'username' => $url['user'],
                 'password' => $url['pass']
             ];
@@ -17,7 +17,7 @@
                 'host' => env('DB_HOST', 'localhost'),
                 'database' => env('DB_DATABASE', 'forge'),
                 'username' => env('DB_USERNAME', 'forge'),
-                'password' -> env('DB_PASSWORD', '')
+                'password' => env('DB_PASSWORD', ''),
             ];
         }
     }
