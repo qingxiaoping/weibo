@@ -18,6 +18,8 @@ class UsersTableSeeder extends Seeder
         $user = User::find(1);
         $user->name = "对数螺旋线";
         $user->email = "qing.xiao.ping.555@gmail.com";
+        $user->password = bcrypt('123456');
+        $user->is_admin = true;
         $user->save();
     }
 }
