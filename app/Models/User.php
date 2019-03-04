@@ -45,6 +45,7 @@ class User extends Authenticatable
         return $this->hasMany(Status::class);
     }
 
+
     /**
      * 获取gravatar头像
      *
